@@ -19,18 +19,13 @@
 
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 40px;
 }
 
-* RESET */ * {
+RESET */ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
 }
 
 /* HEADER - GRID */
@@ -39,7 +34,7 @@ header {
     grid-template-columns: 150px 1fr;
     align-items: center;
     padding: 1rem;
-    background-color: #f4f4f4;
+    background-color: #9277ff60;
 }
 
 header img {
@@ -64,6 +59,10 @@ nav a:hover {
     color: #0077b6;
 }
 
+.hero {
+    position: relative;
+}
+
 /* HERO */
 .hero {
     text-align: center;
@@ -72,9 +71,30 @@ nav a:hover {
     color: white;
 }
 
+nav ul {
+    display: grid;
+    grid-auto-flow: column;
+    /* mete yo sou yon liy */
+    justify-content: end;
+    /* mete yo sou bò dwat */
+    gap: 10px;
+    /* ti espas */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 10px;
+    /* ti padding pou yo pa kole twòp */
+    color: black;
+}
+
 /* HISTORY SECTION */
 .history {
     padding: 2rem;
+    text-align: center;
 }
 
 .history-content {
@@ -89,8 +109,7 @@ nav a:hover {
     width: 100%;
 }
 
-/* ADVENTURES */
-.adventures {
+* ADVENTURES */ .adventures {
     padding: 2rem;
     text-align: center;
 }
@@ -122,7 +141,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #f4f4f4;
+    background-color: #9277ff60;
     margin-top: 2rem;
 }
 
