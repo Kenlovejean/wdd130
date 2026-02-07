@@ -11,114 +11,97 @@
 </head>
 
 <body>
-
-    <header>
-        <img src="images/logo.png" alt="Rafting Company Logo" width="100">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Rafting Company Logo" width="100">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
         <main>
-            <main>
 
-                <h1>Contact Us</h1>
+            <section class="contact-grid">
+                <h1>Contact us</h1>
 
-                <section class="contact-grid">
+                <!-- Company Info + Map -->
+                <div class="company">
+                    <h2>White Water Rafting Company</h2>
+                    <p>123 Main River Street</p>
+                    <p>Kolob, California</p>
+                    <p>+1 999 999 9999</p>
+                    <p>info@whitewater.com</p>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1902.438021456993!2d-91.9919374!3d17.5134297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1770450696538!5m2!1ses-419!2smx"
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <!-- Company Info + Map -->
-                    <div class="company">
-                        <h2>White Water Rafting Company</h2>
-                        <p>123 Main River Street</p>
-                        <p>Kolob, California</p>
-                        <p>+1 999 999 9999</p>
-                        <p>info@whitewater.com</p>
-                        <iframe
-                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1902.438021456993!2d-91.9919374!3d17.5134297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1770450696538!5m2!1ses-419!2smx"
-                          width="600" height="450" style="border:0;" allowfullscreen=""
-                          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
-                    </div>
+                <!-- Form -->
+                <div class="form-section">
+                    <form>
 
-                    <!-- Form -->
-                    <div class="form-section">
-                        <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
 
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
 
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                        <p>Message Purpose:</p>
 
-                            <p>Message Purpose:</p>
+                        <label>
+                            <input type="radio" name="purpose" value="general" required>
+                            General Inquiry
+                        </label>
 
-                            <label>
-                                <input type="radio" name="purpose" value="general" required>
-                                General Inquiry
-                            </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
 
-                            <label>
-                                <input type="radio" name="purpose" value="reservation">
-                                Reservation Question
-                            </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
 
-                            <label>
-                                <input type="radio" name="purpose" value="suggestion">
-                                Website Suggestion
-                            </label>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
 
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="4"></textarea>
+                        <label>
+                            <input type="checkbox" name="subscribe">
+                            Please subscribe me to the monthly newsletter
+                        </label>
 
-                            <label>
-                                <input type="checkbox" name="subscribe">
-                                Please subscribe me to the monthly newsletter
-                            </label>
+                        <button type="submit">Get in Touch!</button>
 
-                            <button type="submit">Get in Touch!</button>
+                    </form>
+                </div>
+            </section>
 
-                        </form>
-                    </div>
+            <!-- Employees -->
+            <section class="employees">
+                <h3>We Are Here to Serve You</h3>
 
-                </section>
+                <div class="employee-cards">
+                    <figure>
+                        <img src="images/employee1.png" alt="River Manager">
+                        <figcaption>River Manager</figcaption>
+                    </figure>
 
-                <section class="contact-container">
+                    <figure>
+                        <img src="images/employee2.png" alt="Lead Guide">
+                        <figcaption>Lead Guide</figcaption>
+                    </figure>
 
-                    <div class="company-info">
-                        <!-- address + phone + email + iframe map -->
-                    </div>
-
-                    <div class="contact-form">
-                        <!-- form lan isit -->
-                    </div>
-
-                </section>
-
-
-                <!-- Employees -->
-                <section class="employees">
-                    <h2>We Are Here to Serve You</h2>
-
-                    <div class="employee-cards">
-                        <figure>
-                            <img src="images/employee1.png" alt="River Manager">
-                            <figcaption>River Manager</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="images/employee2.png" alt="Lead Guide">
-                            <figcaption>Lead Guide</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="images/employee3.png" alt="Safety Coordinator">
-                            <figcaption>Safety Coordinator</figcaption>
-                        </figure>
-                    </div>
-                </section>
-
-            </main>
+                    <figure>
+                        <img src="images/employee3.png" alt="Safety Coordinator">
+                        <figcaption>Safety Coordinator</figcaption>
+                    </figure>
+                </div>
+            </section>
 
         </main>
         <footer>
@@ -129,7 +112,6 @@
                 <a href="#"><img src="images/instagram-square.svg" alt="Instagram"></a>
             </nav>
         </footer>
-
 
 </body>
 
