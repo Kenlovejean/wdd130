@@ -54,13 +54,13 @@ nav {
 }
 
 nav a {
-    padding: 10px 25px;
+    padding: 10px 10px;
     text-decoration: none;
     color: black;
     background: white;
     border: 1px solid black;
     font-weight: bold;
-    margin: 0;
+    margin: 10;
 }
 
 nav a:not(:last-child) {
@@ -68,7 +68,7 @@ nav a:not(:last-child) {
 }
 
 header img {
-    width: 120px;
+    width: 100px;
 }
 
 /* =========================
@@ -177,12 +177,12 @@ footer {
     padding: 20px;
     margin-top: 40px;
     border: 2px solid black;
-    text-align: center;
+    text-align: left;
 }
 
 footer p {
     font-size: 0.9rem;
-    width: 100%;
+    width: auto;
 }
 
 .socialmedia {
@@ -200,32 +200,33 @@ footer p {
 }
 
 h1 {
-    text-align: center;
+    text-align: left;
     margin: 30px 0;
 }
 
 /* CONTACT GRID */
 .contact-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    margin: 40px 0;
+    margin: 0;
 }
 
 /* EMPLOYEES */
 .employee-cards {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+
 }
 
 .employee-cards img {
     width: 100%;
-    max-width: 250px;
+    max-width: 100px;
 }
 
 .employee-cards figure {
     text-align: center;
+    flex-direction: column;
 }
 
 /* FORM */
@@ -235,81 +236,54 @@ h1 {
 
 form {
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 
-.form-group {
+.form-row {
     display: flex;
-    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
-input,
-textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-fieldset {
-    border: 1px solid #ccc;
-    padding: 15px;
-}
-
-.submit-btn {
-    padding: 12px;
-    background-color: #00a0cc;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background-color: #005fa3;
-}
-
-/* CONTACT PAGE LAYOUT */
-.company-info {
-    text-align: center;
-    padding: 30px;
-}
-
-.contact-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding: 30;
-}
-
-.contact-layout iframe {
-    width: 100%;
-    height: 300px;
-}
-
-.contact-form form {
+.form-row {
     display: flex;
-    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 8px;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
-.contact-form button {
-    padding: 10px;
-    background-color: #6c63ff;
-    color: white;
-    border: none;
-    cursor: pointer;
+.form-row label {
+    width: 120px;
+    margin-right: 10px;
     font-weight: bold;
 }
 
-.contact-form button:hover {
-    background-color: #4b47cc;
+.form-row input,
+.form-row textarea {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
 }
 
 /* EMPLOYEE SECTION */
@@ -328,11 +302,11 @@ fieldset {
 }
 
 .employees img {
-    width: 150px;
+    width: 50%;
 }
 
 iframe {
-    width: 100%;
+    width: 30%;
     max-width: 300px;
     height: 300px;
     display: block;
@@ -342,37 +316,45 @@ iframe {
 /* ===== CONTACT PAGE LAYOUT ===== */
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.contact-container {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1100px;
-    margin: 40px auto;
-    flex-wrap: wrap;
-}
-
-.company-info {
+    position: relative;
     text-align: center;
-    padding: 30px;
+    top: auto;
+    padding: 0;
 }
 
-.contact-form {
-    flex: 1;
-    min-width: 300px;
+.container h2 {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    margin: 20px;
+}
+
+.col img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* MAP SIZE */
 .company-info iframe {
-    width: 100%;
+    width: 50%;
     max-width: 500px;
     height: 300px;
     margin-top: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
+    display: flex;
 }
 
 /* FORM STYLE */
@@ -390,11 +372,11 @@ form textarea {
 }
 
 form textarea {
-    min-height: 100px;
+    min-height: 50px;
 }
 
 button {
-    padding: 10px;
+    padding: 5px;
     background-color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -411,13 +393,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-}
-
-/* FOOTER ALWAYS BOTTOM */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 main {

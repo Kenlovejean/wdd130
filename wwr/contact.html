@@ -4,114 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-      content="Contact White Water Rafting for reservations, questions, or suggestions.">
+    <meta name="Ken Love Jean, JULES" content="WDD130">
     <title>Contact Us | White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <img src="images/logo.png" alt="Rafting Company Logo" width="100">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
-        <main>
+    <div class="container"></div>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo" width="100">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact-us">
+            <div class="header">
+                <h1>White Water Rafting Company</h1>
+            </div>
 
-            <section class="contact-grid">
-                <h1>Contact us</h1>
-
-                <!-- Company Info + Map -->
-                <div class="company">
-                    <h2>White Water Rafting Company</h2>
-                    <p>123 Main River Street</p>
-                    <p>Kolob, California</p>
-                    <p>+1 999 999 9999</p>
-                    <p>info@whitewater.com</p>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1902.438021456993!2d-91.9919374!3d17.5134297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1770450696538!5m2!1ses-419!2smx"
-                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <div class="contact-main"></div>
+            <div class="contact-info">
+                <p>123 Main River Street</p>
+                <p>Kolob, California</p>
+                <p>+1 999 999 9999</p>
+                <p>info@whitewater.com</p>
+            </div>
+            <div class="contact-form-map"></div>
+            <form>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
                 </div>
-
-                <!-- Form -->
-                <div class="form-section">
-                    <form>
-
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <p>Message Purpose:</p>
-
-                        <label>
-                            <input type="radio" name="purpose" value="general" required>
-                            General Inquiry
-                        </label>
-
-                        <label>
-                            <input type="radio" name="purpose" value="reservation">
-                            Reservation Question
-                        </label>
-
-                        <label>
-                            <input type="radio" name="purpose" value="suggestion">
-                            Website Suggestion
-                        </label>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
-
-                        <label>
-                            <input type="checkbox" name="subscribe">
-                            Please subscribe me to the monthly newsletter
-                        </label>
-
-                        <button type="submit">Get in Touch!</button>
-
-                    </form>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email">
                 </div>
-            </section>
+                <div class="form-row">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">Get in Touch!</button>
+            </form>
 
-            <!-- Employees -->
-            <section class="employees">
-                <h3>We Are Here to Serve You</h3>
+            <!-- Map -->
+            <div class="map">
+                <iframe
+                  src="https://maps.google.com/maps?q=Kolob%20California&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  width="100%" height="250" style="border:0;" allowfullscreen=""
+                  loading="lazy"></iframe>
+            </div>
 
+            <div class="team">
                 <div class="employee-cards">
-                    <figure>
-                        <img src="images/employee1.png" alt="River Manager">
-                        <figcaption>River Manager</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/employee2.png" alt="Lead Guide">
-                        <figcaption>Lead Guide</figcaption>
-                    </figure>
-
-                    <figure>
-                        <img src="images/employee3.png" alt="Safety Coordinator">
-                        <figcaption>Safety Coordinator</figcaption>
-                    </figure>
+                    <img src="images/employee1.png" alt="River Manager">
+                    <p>River Manager</p>
                 </div>
-            </section>
+                <div class="employee-cards">
+                    <img src="images/employee2.png" alt="Lead Guide">
+                    <p>Lead Guide</p>
+                </div>
+                <div class="employee-cards">
+                    <img src="images/employee3.png" alt="Safety Coordinator">
+                    <p>Safety Coordinator</p>
+                </div>
 
-        </main>
-        <footer>
-            <p>© 2026 White Water Rafting | Ken Love Jean, JULES</p>
-            <nav class="socialmedia">
-                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="images/linkedin-square.svg" alt="Twitter"></a>
-                <a href="#"><img src="images/instagram-square.svg" alt="Instagram"></a>
-            </nav>
-        </footer>
+                </footer>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>© 2026 White Water Rafting | Ken Love Jean, JULES</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/linkedin-square.svg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-square.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
 
 </body>
 
